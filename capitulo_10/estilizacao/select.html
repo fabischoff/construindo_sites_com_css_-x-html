@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Estilizando Select </title>
+        <style>
+            body {
+                font-size:62.5%;
+            }
+            form {
+                width: 15em;
+                font-size:1.6em;
+                font-weight: bold;
+                color:#090;
+            }
+            select {
+                width: 15em;
+                background: #b5dab5;
+                border:1px solid #090;
+            }
+            optgroup {
+                color:#090;
+                background: #fff;
+            }
+            option {
+                color:#333;
+                background: #cceecc;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Softwares</legend>
+                <select>
+                    <optgroup label="Editores">
+                        <option selected="selected">Sua escolha</option>
+                        <option value="">TextEdit</option>
+                        <option value="">HTML-kit</option>
+                        <option value="">DreamWeaver</option>
+                    </optgroup>
+                    <optgroup label="Navegadores">
+                        <option value="">Safari</option>
+                        <option value="">Firefox</option>
+                        <option value="">Opera</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

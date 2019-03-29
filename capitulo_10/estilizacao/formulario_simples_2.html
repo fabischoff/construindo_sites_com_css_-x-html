@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Fale conosco </title>
+        <style>
+            body {
+                font-size: 62.5%;
+            }
+            form {
+                width: 20em;
+                font-size: 1.6em;
+            }
+            form fieldset {
+                border: 1px solid #666;
+                padding: 0 0.5em;
+            }
+            form legend {
+                padding: 0 0.5em; 
+                border: 1px #333 solid;
+            }
+            form label {
+                display: block;
+                margin-top: 0.5em;
+            }
+            form input {
+                width: 15em;
+            }
+            form input#enviar {
+                margin-top: 1em; 
+                width: auto;
+            }
+            form textarea {
+                width:20em;
+                margin-bottom:0.8em;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Fale conosco</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+                <input type="button" value="Enviar" id="enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>

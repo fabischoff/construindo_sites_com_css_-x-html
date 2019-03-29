@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Elemento fieldset e legend </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend><br>
+                <label>Nome: <input type="text"></label><br><br>
+                <label>Endereço: <input type="text"></label><br><br>
+                ... outros controles colentando dados pessoais ...
+            </fieldset>
+
+            <fieldset>
+                <legend>Histórioco médico</legend><br>
+                <label><input type="checkbox"> Alérgico </label> <br>
+                <label><input type="checkbox"> Tonteiras </label> <br>
+                <label><input type="checkbox"> Vacinação </label> <br>
+                ... outros controles para histórico médico ...
+            </fieldset>
+
+            <fieldset>
+                <legend>Medicamentos em uso</legend>
+                <p>Está tomando algum medicamento?</p>
+                <label><input type="radio">Sim</label><br>
+                <label><input type="radio">Não</label><br><br>
+
+                <label>Caso esteja tomando medicamento <br>
+                    indique o nome e a dosagem diária: <br>
+                    <textarea rows="5" cols="25"></textarea>
+                </label>
+            </fieldset>
+
+        </form>
+    </body>
+</html>

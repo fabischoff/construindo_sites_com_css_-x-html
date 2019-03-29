@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Fale conosco </title>
+        <style>
+            body {
+                font-size: 62.5%;
+            }
+
+            form {
+                width: 25em;
+                font-size: 1.6em;
+                font-weight: bold;
+                color:#090;
+            }
+            form fieldset{
+                background: #cceecc url(../../img/bg-form.jpg) repeat-x bottom;
+                border:1px solid #090;
+                padding: 0 0.5em;
+                
+            }
+            form legend {
+                background: #fbe;
+                color:#c30;
+                padding: 0 0.5em;
+                border:1px solid #0c0;
+            }
+            div {
+                float:left; 
+                margin:1em 0;
+            }
+            form label {
+                display: block;
+                width: 5.5em;
+                /*outline: 1px solid #000;*/
+                margin-bottom: 1em;
+            }
+            form input {
+                background: #fef;
+                display: block;
+                width:15em;
+                margin-bottom: 1em;
+                border:1px solid #ccc;
+            }
+            form input#enviar {
+                clear:both;
+                width:auto;
+            }
+            form textarea {
+                background:#fef;
+                border:1px solid #ccc;
+                display: block;
+                width: 20em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Fale conosco</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <label for="email">Email:</label>
+                    <label for="mensagem">Mensagem</label>
+                </div>
+                <div>
+                    <input type="text" name="nome" id="nome">
+                    <input type="email" name="email" id="email">
+                    <textarea name="mensagem" id="mensagem" cols="28" rows="6"></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>

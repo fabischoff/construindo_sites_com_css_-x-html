@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Tabindex e accesskey </title>
+    </head>
+    <body>
+        <h3>Tabindex</h3>
+        <h4>Navegação via teclado</h4>
+        <p> Ir para o <a tabindex="10" href="http://google.com">Site do Google</a></p>
+        <p>... conteúdo ...</p>
+        <button type="button" tabindex="1">Conferir</button>
+        <p>... conteúdo ...</p>
+
+        <form>
+            <label>Nome: <br>
+                <input tabindex="1" type="text">
+            </label><br>
+
+            <label>ID: <br>
+                <input tabindex="2" type="text">
+            </label><br><br>
+            <input tabindex="3" type="submit">
+        </form>
+
+        <form action="action">
+            <label for="nome" accesskey="p">Nome: </label>
+            <input type="text" id="nome">
+        </form>
+    </body>
+</html>
