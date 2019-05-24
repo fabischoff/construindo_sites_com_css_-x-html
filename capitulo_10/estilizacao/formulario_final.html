@@ -4,6 +4,103 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title> Formulário final </title>
+        <style> 
+            * {
+                /*font-size : 16px;*/
+            }
+            form {
+                font: 0.7em Verdana, Arial, sans-serif;
+                width: 50em;
+                background: #f1faf1 url(../../img/form.jpg) no-repeat;
+                border:1px solid #090;
+                padding: 2em 1.5em 2em 75px;
+                color: #090;
+                
+            }
+            fieldset {
+                border:1px solid #9e9;
+                padding: 1em;
+                margin: 1em 0;
+            }
+            legend {
+                border: 1px solid #9c9;
+                font-weight: bold;
+                padding: 2px 5px;
+                background: #fff;
+            }
+            input, select {
+                border:1px solid #090;
+                background: #fff;
+            }
+            input#enviar, input#limpar {
+                background: #fff;
+            }
+            li input, div p input {
+                border:none;
+            }
+            label {
+                display: block;
+                margin: 0.8em 0 0.2em 0;
+            }
+            p label, li label {
+                display: inline;
+            }
+            
+            fieldset#dp1 input, fieldset#dp2 input, select {
+                width: 90%;
+/*                margin: 0 auto;
+                display: block;*/
+            }
+            textarea {
+                width: 60%;
+                border: 1px solid #090;
+                background: #fff;
+            }
+            
+            fieldset#dp1 {
+                width: 44%;
+                float: left;
+            }
+            fieldset#dp2 {
+                float: right;
+                width: 44%;
+            }
+            fieldset#fe {
+                clear: both;
+            }
+            div {
+                width: 50%;
+                float:left;
+            }
+            div p {
+                margin: 0 0.5em;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            li input, div p input {
+                border:none;
+            }
+            fieldset#dp1 {
+                background: url(../../img/profissao.jpg) no-repeat right bottom
+            }
+            fieldset#dp2 {
+                background: url(../../img/localizacao.jpg) no-repeat right bottom
+            }
+            fieldset#fe {
+                background: url(../../img/etaria.jpg) no-repeat right bottom
+            }
+            fieldset#es {
+                background: url(../../img/esporte.jpg) no-repeat right bottom
+            }
+            fieldset#com {
+                background: url(../../img/comentario.jpg) no-repeat 90% 100%;
+            }
+            
+        </style>
     </head>
     <body>
         <form action="">
@@ -75,17 +172,18 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset id="com"> 
-                    <legend>Comentário</legend>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="mensagem" cols="28" rows="6"></textarea>
-                </fieldset>
-                </fieldset>
-                <p>
-                    <input type="submit" value="Enviar" id="enviar">
-                    <input type="reset" value="Limpar" id="limpar">
-                </p>
-            
+            </fieldset>
+            <fieldset id="com"> 
+                <legend>Comentário</legend>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="28" rows="6"></textarea>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar" id="enviar">
+                <input type="reset" value="Limpar" id="limpar">
+            </p>
+
         </form>
     </body>
 </html>
